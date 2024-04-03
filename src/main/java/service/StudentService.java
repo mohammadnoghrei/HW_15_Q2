@@ -27,5 +27,5 @@ public class StudentService {
     public List<Student> findAll(){
         return studentRepository.findAll();
     }
-    public void contains(){}
+    public Student contains(int id){return studentRepository.findById(id);}
 }
