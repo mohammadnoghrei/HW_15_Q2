@@ -24,6 +24,6 @@ public class PersonService  {
     public List<Person> findAll(){
         return personRepository.findAll();
     }
-    public void contains(){}
+    public Person contains(int id){return personRepository.findById(id);}
 
 }
