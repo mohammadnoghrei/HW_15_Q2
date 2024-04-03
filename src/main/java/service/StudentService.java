@@ -5,7 +5,9 @@ import model.Student;
 import repository.PersonRepository;
 import repository.StudentRepository;
 
+import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class StudentService {
 
@@ -27,5 +29,12 @@ public class StudentService {
     public List<Student> findAll(){
         return studentRepository.findAll();
     }
-    public Student contains(int id){return studentRepository.findById(id);}
+    public Boolean contains(int id) {
+        if (studentRepository.findById(id) == null)
+            return false;
+        else return true;
+    }
+
+
+
 }
