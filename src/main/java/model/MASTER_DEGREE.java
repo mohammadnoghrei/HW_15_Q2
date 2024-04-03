@@ -1,3 +1,3 @@
 package model;
 
-public enum MASTER_DEGREE {A, B, C}
+public enum MASTER_DEGREE {A, B, C,NoDegree}
