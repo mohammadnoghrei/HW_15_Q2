@@ -1,10 +1,7 @@
 package model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 
 import java.util.Date;
 
@@ -12,6 +9,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Getter
 @Setter
+@ToString
 @Entity
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public class Person {
